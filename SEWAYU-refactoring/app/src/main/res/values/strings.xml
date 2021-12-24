@@ -1,0 +1,23 @@
+<resources>
+    <string name="app_name">SewayuPiks</string>
+    <string name="select">Choose ur ngeng</string>
+    <string name="on_progress">on progress</string>
+    <string name="your_booking">your booking</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="name">Name</string>
+    <string name="phone">Phone Number</string>
+    <string name="age">Usia</string>
+    <string name="address">Alamat</string>
+    <string name="confirm_password">Konfirmasi Password</string>
+    <string name="password">Password</string>
+    <string name="email">Email</string>
+    <string name="label_1">By continuing you accept our <u>Privacy Policy</u> and <u>Term of Use</u></string>
+    <string name="register">Register</string>
+    <string name="already_have_an_account">Already have an account? </string>
+    <string name="login_underline"><u>Login</u></string>
+    <string name="username">Username</string>
+    <string name="login">Login</string>
+    <string name="register_button"><u>Register</u></string>
+    <string name="don_t_have_an_account">Don\'t have an account? </string>
+</resources>

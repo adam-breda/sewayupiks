@@ -1,0 +1,336 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EditActivity">
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/modul2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="centerCrop"
+        app:lottie_autoPlay="true"
+        app:lottie_loop="true"
+        app:lottie_rawRes="@raw/background_wave"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="-57dp"
+        tools:layout_editor_absoluteY="-2dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="-34dp"
+        tools:layout_editor_absoluteY="16dp"
+        android:layout_marginTop="40dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <!--                <com.airbnb.lottie.LottieAnimationView-->
+                <!--                    android:id="@+id/back"-->
+                <!--                    android:layout_width="45dp"-->
+                <!--                    android:layout_height="45dp"-->
+                <!--                    android:layout_marginLeft="15dp"-->
+                <!--                    android:layout_marginTop="25dp"-->
+                <!--                    android:scaleType="centerCrop"-->
+                <!--                    app:lottie_autoPlay="true"-->
+                <!--                    app:lottie_loop="true"-->
+                <!--                    app:lottie_rawRes="@raw/back"/>-->
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="80dp"
+                    android:background="@drawable/logo"/>
+
+
+
+            </LinearLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="470dp"
+                android:layout_marginTop="15dp">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="440dp"
+                    android:layout_margin="16dp"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/addikan"
+                    android:elevation="5dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="105dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/poppins"
+                        android:padding="15dp"
+                        android:text="KATEGORI"
+                        android:textSize="25sp" />
+
+                    <RadioGroup
+                        android:id="@+id/RadioGroup"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="108dp"
+                        android:layout_marginTop="60dp"
+                        android:orientation="horizontal">
+
+
+                        <RadioButton
+                            android:id="@+id/betina"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:layout_marginRight="20dp"
+                            android:background="@drawable/radio_selector"
+                            android:button="@drawable/null_radio_button"
+                            android:elevation="1dp"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Motor"
+                            android:textColor="@color/black"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.268"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.409" />
+
+                        <RadioButton
+                            android:id="@+id/lakik"
+                            android:layout_width="wrap_content"
+                            android:layout_height="35dp"
+                            android:background="@drawable/radio_selector"
+                            android:button="@drawable/null_radio_button"
+                            android:elevation="1dp"
+                            android:gravity="center"
+                            android:padding="10dp"
+                            android:text="Mobil"
+                            android:textColor="@color/black"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintHorizontal_bias="0.863"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent"
+                            app:layout_constraintVertical_bias="0.401" />
+
+                    </RadioGroup>
+
+                    <androidx.coordinatorlayout.widget.CoordinatorLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.google.android.material.textfield.TextInputLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="50dp"
+                            android:layout_marginRight="20dp"
+                            android:layout_marginTop="110dp"
+                            android:hint="Pilih Kendaraan"
+                            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu">
+
+                            <AutoCompleteTextView
+                                android:id="@+id/PilihKendaraan"
+                                android:layout_width="270dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:inputType="none"/>
+                        </com.google.android.material.textfield.TextInputLayout>
+                    </androidx.coordinatorlayout.widget.CoordinatorLayout>
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="170dp"
+                        android:fontFamily="@font/poppins"
+                        android:padding="15dp"
+                        android:text="Keperluan"
+                        android:textSize="20sp" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_event"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="205dp"
+                        android:text="Event"
+                        tools:layout_editor_absoluteY="199dp" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_ngedate"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="245dp"
+                        android:text="Ngedate"
+                        tools:layout_editor_absoluteX="103dp"
+                        tools:layout_editor_absoluteY="199dp" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_jalan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="110dp"
+                        android:layout_marginTop="205dp"
+                        android:text="Jalan - jalan"
+                        tools:layout_editor_absoluteX="173dp"
+                        tools:layout_editor_absoluteY="199dp" />
+
+                    <CheckBox
+                        android:id="@+id/checkbox_keluarga"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="110dp"
+                        android:layout_marginTop="245dp"
+                        android:text="Acara Keluarga"
+                        tools:layout_editor_absoluteX="262dp"
+                        tools:layout_editor_absoluteY="199dp" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="274dp"
+                        android:fontFamily="@font/poppins"
+                        android:padding="15dp"
+                        android:text="Lama Sewa"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:id="@+id/DariTanggal"
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="304dp"
+                        android:hint="From Date"
+                        android:inputType="datetime" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="110dp"
+                        android:layout_marginTop="304dp"
+                        android:fontFamily="@font/poppins"
+                        android:padding="15dp"
+                        android:text="-"
+                        android:textSize="20sp" />
+
+                    <EditText
+                        android:layout_width="100dp"
+                        android:layout_height="50dp"
+                        android:id="@+id/HinggaTanggal"
+                        android:inputType="datetime"
+                        android:layout_marginTop="304dp"
+                        android:layout_marginLeft="140dp"
+                        android:hint="From Date"/>
+
+                    <TextView
+                        android:id="@+id/fuel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="344dp"
+                        android:fontFamily="@font/poppins"
+                        android:padding="15dp"
+                        android:text="Fuel Capacity"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/ketersediaan"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="10dp"
+                        android:layout_toRightOf="@+id/fuel"
+                        android:layout_marginTop="344dp"
+                        android:fontFamily="@font/poppins"
+                        android:padding="15dp"
+                        android:text="0 Liter"
+                        android:textSize="20sp" />
+
+                    <SeekBar
+                        android:id="@+id/seekbar"
+                        android:layout_width="match_parent"
+                        android:layout_height="30dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="390dp"
+                        android:layout_marginRight="10dp"
+                        android:background="@drawable/home_button"
+                        android:elevation="5dp"
+                        android:foregroundGravity="center"
+                        android:max="3"
+                        android:min="0"
+                        android:thumb="@drawable/ic_add" />
+
+                </RelativeLayout>
+
+
+
+                <!--                <ImageView-->
+                <!--                    android:layout_width="180dp"-->
+                <!--                    android:layout_height="180dp"-->
+                <!--                    android:layout_alignParentRight="true"-->
+                <!--                    android:layout_marginTop="-20dp"-->
+                <!--                    android:layout_marginRight="-35dp"-->
+                <!--                    android:elevation="5dp"-->
+                <!--                    android:src="@drawable/cupang_biru_putihh" />-->
+
+            </RelativeLayout>
+
+            <CheckBox
+                android:id="@+id/makingsure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/poppins"
+                android:text="Are you sure all you're data is correct?"
+                tools:layout_editor_absoluteY="199dp" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:layout_width="200dp"
+                    android:layout_height="43dp"
+                    android:layout_gravity="center"
+                    android:layout_marginBottom="20dp"
+                    android:layout_marginTop="10dp"
+                    android:padding="8dp"
+                    android:text="SUBMIT"
+                    android:fontFamily="@font/poppins"
+                    android:textColor="@color/black"
+                    android:layout_marginLeft="90dp"
+                    android:background="@drawable/home_button"
+                    android:gravity="center"/>
+
+                <Button
+                    android:id="@+id/button_input"
+                    android:layout_width="200dp"
+                    android:layout_height="43dp"
+                    android:layout_marginLeft="90dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@android:color/transparent"
+                    android:backgroundTint="#B0BCE4"
+                    android:elevation="10dp"
+                    android:onClick="addData"/>
+
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
